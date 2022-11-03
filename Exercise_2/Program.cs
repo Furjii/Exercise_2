@@ -102,5 +102,45 @@ namespace contohaja
 
         }
 
+
+        static void Main(string[] args)
+        {
+            Program myList = new Program();
+            int pilihanmenu;
+            char ch;
+            do
+            {
+                do
+                {
+                    Console.WriteLine("Menu Option");
+                    Console.WriteLine("=================");
+                    Console.WriteLine("1. insertion seacrh");
+                    Console.WriteLine("2. binary seacrh");
+                    Console.WriteLine("3. exit");
+                    Console.WriteLine("Enter your choice (1,2,3) : ");
+                    pilihanmenu = Convert.ToInt32(Console.ReadLine());
+                    switch (pilihanmenu)
+                    {
+                        case 1:
+                            Console.WriteLine("");
+                            Console.WriteLine("...................");
+                            Console.WriteLine("insertion Search ");
+                            Console.WriteLine("...................");
+                            myList.input();
+                            myList.InsertionSort();
+                            break;
+                        
+                    }
+                    Console.WriteLine("\nPilih menu lagi? (y/n): ");
+                    ch = char.Parse(Console.ReadLine().ToLower());
+                    Console.Clear();
+                } while (ch == 'y');
+
+                //to exit from the console
+                Console.WriteLine("\n\nPress return to exit.");
+                Console.ReadLine();
+            } while (pilihanmenu != 3);
+
+        }
     }
 }

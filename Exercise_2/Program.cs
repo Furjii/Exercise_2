@@ -21,6 +21,8 @@ namespace Exercise_2
                 n = Int32.Parse(s);
                 if (n <= 50)
                     break;
+                else
+                    Console.WriteLine("\nArray can have maximum 50 elemnts \n");
             }
         }
         static void Main(string[] args)

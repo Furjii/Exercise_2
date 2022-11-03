@@ -27,6 +27,13 @@ namespace Exercise_2
             Console.WriteLine("\n********************");
             Console.WriteLine("Masukkan Element Array");
             Console.WriteLine("\n********************");
+
+            for (int i = 0; i < n; i++) ;
+            {
+                Console.WriteLine("<" + (i + 1) + ">");
+                string s = Console.ReadLine();
+                furji[i] = Int32.Parse(s);
+            }
         }
         static void Main(string[] args)
         {

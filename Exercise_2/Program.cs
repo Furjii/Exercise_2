@@ -16,7 +16,7 @@ namespace Exercise_2
         {
             while (true)
             {
-                Console.WriteLine("Enter the number of element in the array :");
+                Console.WriteLine("Masukkan jumlah element pada Array :");
                 string s = Console.ReadLine();
                 n = Int32.Parse(s);
                 if (n <= 50)
@@ -24,6 +24,9 @@ namespace Exercise_2
                 else
                     Console.WriteLine("\nArray can have maximum 50 elemnts \n");
             }
+            Console.WriteLine("\n********************");
+            Console.WriteLine("Masukkan Element Array");
+            Console.WriteLine("\n********************");
         }
         static void Main(string[] args)
         {

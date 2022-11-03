@@ -35,6 +35,24 @@ namespace Exercise_2
                 furji[i] = Int32.Parse(s);
             }
         }
+        public void InsertionSort()
+        {
+            for (i = 1; i < n; i++)
+            {
+                val = furji[i];
+                flag = 0;
+                for (j = i - 1; j >= 0 && flag != 1;)
+                {
+                    if (val < furji[j])
+                    {
+                        furji[j + 1] = furji[j];
+                        j--;
+                        furji[j + 1] = val;
+                    }
+                    else flag = 1;
+                }
+            }
+        }
         static void Main(string[] args)
         {
          

@@ -137,7 +137,9 @@ namespace contohaja
                             myList.input();
                             // myList.Merge();
                             break;
-                        
+                        case 3:
+                            Console.WriteLine("Exit");
+                            break;
                     }
                     Console.WriteLine("\nPilih menu lagi? (y/n): ");
                     ch = char.Parse(Console.ReadLine().ToLower());

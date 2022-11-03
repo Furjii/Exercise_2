@@ -53,7 +53,20 @@ namespace Exercise_2
                 }
             }
         }
-        static void Main(string[] args)
+
+        static public void MainMerge(int[] numbers, int left, int mid, int right)
+        {
+
+        }
+        
+            
+            
+            
+            
+            
+            
+            
+            static void Main(string[] args)
         {
          
         }

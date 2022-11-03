@@ -115,7 +115,7 @@ namespace contohaja
                     Console.WriteLine("Menu Option");
                     Console.WriteLine("=================");
                     Console.WriteLine("1. insertion seacrh");
-                    Console.WriteLine("2. binary seacrh");
+                    Console.WriteLine("2. Merge seacrh");
                     Console.WriteLine("3. exit");
                     Console.WriteLine("Enter your choice (1,2,3) : ");
                     pilihanmenu = Convert.ToInt32(Console.ReadLine());
@@ -128,6 +128,14 @@ namespace contohaja
                             Console.WriteLine("...................");
                             myList.input();
                             myList.InsertionSort();
+                            break;
+                        case 2:
+                            Console.WriteLine("");
+                            Console.WriteLine("...................");
+                            Console.WriteLine("Merge Search ");
+                            Console.WriteLine("...................");
+                            myList.input();
+                            // myList.Merge();
                             break;
                         
                     }
